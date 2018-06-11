@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>科技政策自动问答系统</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="main">
+        <div id="inner">
+          <div id="page1">
+            <img class="logo" src="src/assets/robot_1.png" alt="logo">
+            <p class="text">欢迎使用科技政策自动问答系统</p>
+            <div id="enter" class="enter">
+              点击进入
+            </div>
+          </div>
+          <div id="page2">
+            <a href="#" id="jump">跳过</a>
+            <p class="pro-text">请选择一个您感兴趣的项目：</p>
+            <ul class="pro-list" id="proList">
+              <li class="pro-item" data-id="1">
+                科技政策1
+              </li>
+              <li class="pro-item" data-id="2">
+                科技政策2
+              </li>
+              <li class="pro-item" data-id="3">
+                科技政策3
+              </li>
+              <li class="pro-item" data-id="4">
+                科技政策4
+              </li>
+              <li class="pro-item" data-id="5">
+                科技政策5
+              </li>
+            </ul>
+            <a id="next" class="next-disabled">选好了，下一步</a>
+          </div>
+          <div id="page3">
+            <div class="navbar">
+              科研政策问答系统
+              <div class="avatar">
+                <img src='./src/assets/me.png' alt="avatar">
+              </div>
+            </div>
+            <div class="chat-wrapper">
+              <div class="chat-ques-list" id="chatQuesWrapper">
+                <div class="chat-ques-aside">
+                  <p class="text-c">猜您</p>
+                  <p class="text">想问</p>
+                </div>
+                <ul id="chatQuesList">
+                  <li class="chat-ques-item">科研政策是什么？</li>
+                  <li class="chat-ques-item">科研政策是什么？</li>
+                </ul>
+              </div>
+              <div class="chat-window" id="chatWindow">
+                <div class="server">
+                  你想问什么问题？你想问什么问题？你想问什么问题？你想问什么问题？
+                </div>
+                <div class="client">
+                  每年的科研基金有多少钱？
+                </div>
+                <div class="server">
+                  每年一万块
+                  <div class="other">fdsfds</div>
+                </div>
+                <div class="client">
+                  钱还挺多的啊
+                </div>
+                <div class="server">
+                  你想问什么问题？你想问什么问题？你想问什么问题？你想问什么问题？
+                </div>
+                <div class="client">
+                  每年的科研基金有多少钱？
+                </div>
+                <div class="server">
+                  每年一万块
+                </div>
+                <div class="client">
+                  钱还挺多的啊
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <i class="icon"></i>
+              <div class="inputbox">
+                <input placeholder="请输入您的问题" type="text" id="inputbox">
+              </div>
+              <button class="sendBtn" id="sendBtn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

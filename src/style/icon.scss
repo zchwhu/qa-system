@@ -1,0 +1,63 @@
+@import "var";
+
+@font-face {
+  font-family: 'qa-icon';
+  src:  url('#{$icomoon-font-path}/qa-icon.eot?814q5f');
+  src:  url('#{$icomoon-font-path}/qa-icon.eot?814q5f#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/qa-icon.ttf?814q5f') format('truetype'),
+  url('#{$icomoon-font-path}/qa-icon.woff?814q5f') format('woff'),
+  url('#{$icomoon-font-path}/qa-icon.svg?814q5f#qa-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'qa-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-oppose_fill_light {
+  &:before {
+    content: unicode($icon-oppose_fill_light);
+  }
+}
+.icon-appreciate_fill_light {
+  &:before {
+    content: unicode($icon-appreciate_fill_light);
+  }
+}
+.icon-bad {
+  &:before {
+    content: unicode($icon-bad);
+  }
+}
+.icon-good {
+  &:before {
+    content: unicode($icon-good);
+  }
+}
+.icon-smile2 {
+  &:before {
+    content: unicode($icon-smile2);
+  }
+}
+.icon-sad2 {
+  &:before {
+    content: unicode($icon-sad2);
+  }
+}
+
